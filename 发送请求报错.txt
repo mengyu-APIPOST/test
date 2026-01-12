@@ -1,0 +1,206 @@
+{
+    "option": {
+        "scene": "http_request",
+        "lang": "zh-cn",
+        "globals": {},
+        "project": {
+            "request": {
+                "header": {
+                    "parameter": [
+                        {
+                            "key": "Accept",
+                            "value": "*/*",
+                            "is_checked": 1,
+                            "field_type": "String",
+                            "is_system": 1
+                        },
+                        {
+                            "key": "Accept-Encoding",
+                            "value": "gzip, deflate, br",
+                            "is_checked": 1,
+                            "field_type": "String",
+                            "is_system": 1
+                        },
+                        {
+                            "key": "User-Agent",
+                            "value": "PostmanRuntime-ApipostRuntime/1.1.0",
+                            "is_checked": 1,
+                            "field_type": "String",
+                            "is_system": 1
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive",
+                            "is_checked": 1,
+                            "field_type": "String",
+                            "is_system": 1
+                        }
+                    ]
+                },
+                "query": {
+                    "parameter": []
+                },
+                "body": {
+                    "parameter": []
+                },
+                "cookie": {
+                    "parameter": []
+                },
+                "auth": {
+                    "type": "noauth"
+                },
+                "pre_tasks": [],
+                "post_tasks": []
+            }
+        },
+        "env": {
+            "env_id": "1",
+            "env_name": "默认环境",
+            "env_pre_url": "",
+            "env_pre_urls": {
+                "1": {
+                    "server_id": "1",
+                    "name": "默认服务",
+                    "sort": 1000,
+                    "uri": ""
+                },
+                "default": {
+                    "server_id": "1",
+                    "name": "默认服务",
+                    "sort": 1000,
+                    "uri": ""
+                }
+            },
+            "environment": {}
+        },
+        "cookies": {
+            "switch": 1,
+            "data": [
+                {
+                    "key": "liveCookie",
+                    "value": "gin",
+                    "maxAge": 120,
+                    "domain": "go.apipost.cn",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "creation": "2025-12-16T02:33:30.095Z",
+                    "name": "liveCookie",
+                    "cookie_id": "3d68051ab0c092",
+                    "expires": "Tue, 16 Dec 2025 02:35:30 GMT",
+                    "project_id": "52ddfaa734b7000"
+                },
+                {
+                    "key": "loseCookie",
+                    "value": "gin",
+                    "maxAge": 0,
+                    "domain": "go.apipost.cn",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "creation": "2025-12-16T02:33:30.095Z",
+                    "name": "loseCookie",
+                    "cookie_id": "3d68051ab0c093",
+                    "expires": "Tue, 16 Dec 2025 02:33:30 GMT",
+                    "project_id": "52ddfaa734b7000"
+                }
+            ]
+        },
+        "system_configs": {
+            "send_timeout": 0,
+            "auto_redirect": -1,
+            "max_redirect_time": 5,
+            "auto_gen_mock_url": -1,
+            "request_param_auto_json": -1,
+            "proxy": {
+                "type": -1,
+                "envfirst": 1,
+                "bypass": [],
+                "protocols": [
+                    "http"
+                ],
+                "auth": {
+                    "authenticate": -1,
+                    "host": "",
+                    "username": "",
+                    "password": ""
+                }
+            },
+            "ca_cert": {
+                "open": -1,
+                "path": ""
+            },
+            "client_cert": {}
+        },
+        "custom_functions": {},
+        "collection": [
+            {
+                "target_id": "3c75a402f0c002",
+                "target_type": "api",
+                "parent_id": "0",
+                "name": "未命名接口",
+                "request": {
+                    "auth": {
+                        "type": "inherit"
+                    },
+                    "body": {
+                        "mode": "json",
+                        "parameter": [],
+                        "raw": "{\r\n    \"F\": \"GADS\"\r\n}",
+                        "raw_parameter": [],
+                        "raw_schema": {
+                            "type": "object"
+                        },
+                        "binary": null
+                    },
+                    "pre_tasks": [],
+                    "post_tasks": [],
+                    "header": {
+                        "parameter": [
+                            {
+                                "param_id": "3c75cf0677505b",
+                                "description": "",
+                                "field_type": "string",
+                                "is_checked": 1,
+                                "key": "Content-Type",
+                                "not_null": 1,
+                                "value": "application/json",
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        ]
+                    },
+                    "query": {
+                        "query_add_equal": 1,
+                        "parameter": []
+                    },
+                    "cookie": {
+                        "cookie_encode": 1,
+                        "parameter": []
+                    },
+                    "restful": {
+                        "parameter": []
+                    }
+                },
+                "parents": [],
+                "method": "POST",
+                "protocol": "http/1.1",
+                "url": "http://39.108.123.227:9005/",
+                "pre_url": ""
+            }
+        ],
+        "database_configs": {}
+    },
+    "test_events": [
+        {
+            "type": "api",
+            "data": {
+                "target_id": "3c75a402f0c002",
+                "project_id": "52ddfaa734b7000",
+                "parent_id": "0",
+                "target_type": "api"
+            }
+        }
+    ]
+}
