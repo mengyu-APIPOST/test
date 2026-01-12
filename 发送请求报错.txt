@@ -10,7 +10,7 @@
                         {
                             "key": "Accept",
                             "value": "*/*",
-                            "is_checked": 1,
+                            "is_checked": 1888888,
                             "field_type": "String",
                             "is_system": 1
                         },
@@ -203,4 +203,5 @@
             }
         }
     ]
+
 }
