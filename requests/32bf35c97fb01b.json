@@ -2,7 +2,7 @@
 	"x-target-id": "32bf35c97fb01b",
 	"x-parent-id": "0",
 	"x-method": "get",
-	"x-url": "http://echo.apipost.cn/get.php",
+	"x-url": "http://echo.apipost.cn/get.php0",
 	"x-protocol": "http",
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
