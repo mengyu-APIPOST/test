@@ -1,15 +1,15 @@
 {
-	"x-target-id": "2d742fc03fb000",
-	"x-parent-id": "0",
-	"x-method": "post",
-	"x-url": "http://cc.apipost.cc:6002/header",
+	"x-target-id": "3f6ac8e37fb007",
+	"x-parent-id": "3f5a0da1ffb021",
+	"x-method": "get",
+	"x-url": "",
 	"x-protocol": "http",
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
 	"x-updated-at": "2025-11-17T10:47:34+08:00",
 	"x-updated-user-name": "",
 	"x-in-trash": false,
-	"x-sort": 17,
+	"x-sort": 0,
 	"x-scripts": {
 		"pre": [
 			{
@@ -153,44 +153,14 @@
 			"exp": ""
 		}
 	},
-	"summary": "header接口aaaaa",
+	"summary": "Unnamed API",
 	"description": "",
 	"tags": [],
-	"parameters": [
-		{
-			"name": "Query11",
-			"in": "query",
-			"description": "",
-			"required": true,
-			"example": "Query11",
-			"schema": {
-				"type": "string"
-			},
-			"x-param-id": "2e9059eebfb1ba"
-		},
-		{
-			"name": "2",
-			"in": "query",
-			"description": "",
-			"required": true,
-			"example": "",
-			"schema": {
-				"type": "string"
-			},
-			"x-param-id": "2ea112c4bfb2b9"
-		}
-	],
+	"parameters": [],
 	"requestBody": {
-		"x-mode": "form-data",
+		"x-mode": "none",
 		"content": {
-			"none": {},
-			"application/json": {
-				"schema": {
-					"type": "object",
-					"properties": {}
-				},
-				"example": "{\n    \"1\":1\n}"
-			}
+			"none": {}
 		}
 	},
 	"responses": {
