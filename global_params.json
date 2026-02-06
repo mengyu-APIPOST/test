@@ -3,7 +3,14 @@
 		"parameter": []
 	},
 	"query": {
-		"parameter": []
+		"parameter": [
+			{
+				"key": "Quango",
+				"value": "1111",
+				"is_checked": 1,
+				"param_id": "3f7be4efffb00e"
+			}
+		]
 	},
 	"body": {
 		"parameter": []

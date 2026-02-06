@@ -2,14 +2,14 @@
 	"x-target-id": "2d7b27b6ffb000",
 	"x-parent-id": "0",
 	"x-method": "get",
-	"x-url": "",
+	"x-url": "go.apipost.cn",
 	"x-protocol": "http",
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
 	"x-updated-at": "2025-11-17T10:47:34+08:00",
 	"x-updated-user-name": "",
 	"x-in-trash": false,
-	"x-sort": 1,
+	"x-sort": 3,
 	"x-scripts": {
 		"pre": [
 			{
@@ -158,9 +158,16 @@
 	"tags": [],
 	"parameters": [],
 	"requestBody": {
-		"x-mode": "none",
+		"x-mode": "form-data",
 		"content": {
-			"none": {}
+			"none": {},
+			"multipart/form-data": {
+				"schema": {
+					"type": "object",
+					"properties": {},
+					"x-schema-orders": []
+				}
+			}
 		}
 	},
 	"responses": {

@@ -26,10 +26,10 @@
 			"path": "/",
 			"secure": true,
 			"httpOnly": true,
-			"creation": "2026-02-05T07:33:00.206Z",
+			"creation": "2026-02-05T10:11:13.721Z",
 			"name": "liveCookie",
 			"cookie_id": "3f1cae2f7fb0f4",
-			"expires": "Thu, 05 Feb 2026 07:35:00 GMT"
+			"expires": "Thu, 05 Feb 2026 10:13:13 GMT"
 		},
 		{
 			"key": "loseCookie",
@@ -39,10 +39,10 @@
 			"path": "/",
 			"secure": true,
 			"httpOnly": true,
-			"creation": "2026-02-05T07:33:00.207Z",
+			"creation": "2026-02-05T10:11:13.722Z",
 			"name": "loseCookie",
 			"cookie_id": "3f1cae2f7fb0f5",
-			"expires": "Thu, 05 Feb 2026 07:33:00 GMT"
+			"expires": "Thu, 05 Feb 2026 10:11:13 GMT"
 		}
 	]
 }

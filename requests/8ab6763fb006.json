@@ -1,15 +1,15 @@
 {
-	"x-target-id": "32c2cca9ffb272",
-	"x-parent-id": "0",
+	"x-target-id": "8ab6763fb006",
+	"x-parent-id": "3f455bdd7fb01b",
 	"x-method": "get",
-	"x-url": "go.apipost.cn",
+	"x-url": "",
 	"x-protocol": "http",
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
 	"x-updated-at": "2025-11-17T10:47:34+08:00",
 	"x-updated-user-name": "",
 	"x-in-trash": false,
-	"x-sort": 11,
+	"x-sort": 0,
 	"x-scripts": {
 		"pre": [
 			{
@@ -153,22 +153,10 @@
 			"exp": ""
 		}
 	},
-	"summary": "使用变量",
+	"summary": "Unnamed API",
 	"description": "",
 	"tags": [],
-	"parameters": [
-		{
-			"name": "1",
-			"in": "query",
-			"description": "",
-			"required": true,
-			"example": "{{test}}",
-			"schema": {
-				"type": "string"
-			},
-			"x-param-id": "32c2d5103fb329"
-		}
-	],
+	"parameters": [],
 	"requestBody": {
 		"x-mode": "none",
 		"content": {

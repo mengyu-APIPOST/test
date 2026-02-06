@@ -1,35 +1,14 @@
 {
-	"x-target-id": "32c2cca9ffb272",
-	"x-parent-id": "0",
-	"x-method": "get",
-	"x-url": "go.apipost.cn",
-	"x-protocol": "http",
-	"x-mock-server-enable": 1,
-	"x-mark-id": "1",
-	"x-updated-at": "2025-11-17T10:47:34+08:00",
-	"x-updated-user-name": "",
+	"x-target-id": "3f7b06b5ffb000",
+	"x-parent-id": "3f7421583fb023",
+	"x-url": "",
+	"x-sort": 0,
 	"x-in-trash": false,
-	"x-sort": 11,
-	"x-scripts": {
-		"pre": [
-			{
-				"type": "customScript",
-				"enabled": 1,
-				"data": "",
-				"name": "Script",
-				"id": "0"
-			}
-		],
-		"post": [
-			{
-				"type": "customScript",
-				"enabled": 1,
-				"data": "",
-				"name": "Script",
-				"id": "0"
-			}
-		]
-	},
+	"x-protocol": "folder",
+	"name": "Unnamed Folder",
+	"description": "",
+	"x-tag-parameters": [],
+	"x-tag-requestBody": [],
 	"x-auth": {
 		"type": "inherit",
 		"kv": {
@@ -153,53 +132,25 @@
 			"exp": ""
 		}
 	},
-	"summary": "使用变量",
-	"description": "",
-	"tags": [],
-	"parameters": [
-		{
-			"name": "1",
-			"in": "query",
-			"description": "",
-			"required": true,
-			"example": "{{test}}",
-			"schema": {
-				"type": "string"
-			},
-			"x-param-id": "32c2d5103fb329"
-		}
-	],
-	"requestBody": {
-		"x-mode": "none",
-		"content": {
-			"none": {}
-		}
-	},
-	"responses": {
-		"200": {
-			"description": "Success",
-			"content": {
-				"application/json": {
-					"schema": {
-						"type": "object",
-						"properties": {}
-					},
-					"example": ""
-				}
+	"x-scripts": {
+		"pre": [
+			{
+				"type": "customScript",
+				"enabled": 1,
+				"data": "",
+				"name": "Script",
+				"id": "0"
 			}
-		},
-		"404": {
-			"description": "Failure",
-			"content": {
-				"application/json": {
-					"schema": {
-						"type": "object",
-						"properties": {}
-					},
-					"example": ""
-				}
+		],
+		"post": [
+			{
+				"type": "customScript",
+				"enabled": 1,
+				"data": "",
+				"name": "Script",
+				"id": "0"
 			}
-		}
+		]
 	},
 	"x-project-id": "0",
 	"x-is-changed": -1
