@@ -1,23 +1,15 @@
 {
-	"x-url": "user/roleList/{id}",
-	"x-method": "get",
-	"summary": "通过 ID 获取用户对象",
-	"x-target-id": "253f233286801f9c",
+	"x-url": "/product/deleteById",
+	"x-method": "delete",
+	"summary": "删除商品",
+	"x-target-id": "38b527850a80172c",
 	"x-scan-form": "Java",
-<<<<<<< HEAD
-	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo/src/main/java/com/apipost/controller/UserController.java",
-=======
 	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo2/src/main/java/com/apipost/controller/UserController.java",
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
 	"x-updated-at": "",
 	"x-updated-user-name": "",
-<<<<<<< HEAD
-	"x-sort": 7,
-=======
-	"x-sort": 0,
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
+	"x-sort": 3,
 	"x-scripts": {
 		"pre": [
 			{
@@ -166,19 +158,15 @@
 	"parameters": [
 		{
 			"name": "id",
-			"in": "path",
-			"description": "主键 ID",
+			"in": "query",
+			"description": "商品主键 ID",
 			"required": true,
 			"example": "1",
 			"schema": {
 				"type": "integer",
 				"example": 1
 			},
-<<<<<<< HEAD
-			"x-param-id": "5ef46eb0-8206-467a-b1bb-7982f6ee3d52"
-=======
-			"x-param-id": "a130a765-9d96-46e5-8984-bf26ad356254"
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
+			"x-param-id": "384b5d86-2ed8-4163-8873-21f62d1bbc48"
 		}
 	],
 	"requestBody": {
@@ -247,11 +235,7 @@
 			"description": "Success"
 		}
 	},
-	"x-parent-id": "02c564f77d801e70",
-<<<<<<< HEAD
+	"x-parent-id": "76bb694ecb001c7f",
 	"x-protocol": "http",
 	"x-is-changed": -1
-=======
-	"x-protocol": "http"
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
 }

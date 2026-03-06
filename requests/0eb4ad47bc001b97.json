@@ -1,23 +1,15 @@
 {
-	"x-url": "user/roleList/{id}",
+	"x-url": "user/getById",
 	"x-method": "get",
 	"summary": "通过 ID 获取用户对象",
-	"x-target-id": "253f233286801f9c",
+	"x-target-id": "0eb4ad47bc001b97",
 	"x-scan-form": "Java",
-<<<<<<< HEAD
-	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo/src/main/java/com/apipost/controller/UserController.java",
-=======
 	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo2/src/main/java/com/apipost/controller/UserController.java",
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
 	"x-updated-at": "",
 	"x-updated-user-name": "",
-<<<<<<< HEAD
-	"x-sort": 7,
-=======
 	"x-sort": 0,
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
 	"x-scripts": {
 		"pre": [
 			{
@@ -166,7 +158,7 @@
 	"parameters": [
 		{
 			"name": "id",
-			"in": "path",
+			"in": "query",
 			"description": "主键 ID",
 			"required": true,
 			"example": "1",
@@ -174,11 +166,7 @@
 				"type": "integer",
 				"example": 1
 			},
-<<<<<<< HEAD
-			"x-param-id": "5ef46eb0-8206-467a-b1bb-7982f6ee3d52"
-=======
-			"x-param-id": "a130a765-9d96-46e5-8984-bf26ad356254"
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
+			"x-param-id": "6106b8a0-8d43-4989-b697-071dfa06df96"
 		}
 	],
 	"requestBody": {
@@ -248,10 +236,5 @@
 		}
 	},
 	"x-parent-id": "02c564f77d801e70",
-<<<<<<< HEAD
-	"x-protocol": "http",
-	"x-is-changed": -1
-=======
 	"x-protocol": "http"
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
 }

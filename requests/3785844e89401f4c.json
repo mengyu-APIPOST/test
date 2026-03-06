@@ -1,23 +1,15 @@
 {
-	"x-url": "user/roleList/{id}",
+	"x-url": "/product/list",
 	"x-method": "get",
-	"summary": "通过 ID 获取用户对象",
-	"x-target-id": "253f233286801f9c",
+	"summary": "分页查询商品列表",
+	"x-target-id": "3785844e89401f4c",
 	"x-scan-form": "Java",
-<<<<<<< HEAD
-	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo/src/main/java/com/apipost/controller/UserController.java",
-=======
 	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo2/src/main/java/com/apipost/controller/UserController.java",
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
 	"x-updated-at": "",
 	"x-updated-user-name": "",
-<<<<<<< HEAD
-	"x-sort": 7,
-=======
-	"x-sort": 0,
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
+	"x-sort": 4,
 	"x-scripts": {
 		"pre": [
 			{
@@ -165,20 +157,28 @@
 	"tags": [],
 	"parameters": [
 		{
-			"name": "id",
-			"in": "path",
-			"description": "主键 ID",
+			"name": "pageNum",
+			"in": "query",
+			"description": "当前页码",
 			"required": true,
 			"example": "1",
 			"schema": {
 				"type": "integer",
 				"example": 1
 			},
-<<<<<<< HEAD
-			"x-param-id": "5ef46eb0-8206-467a-b1bb-7982f6ee3d52"
-=======
-			"x-param-id": "a130a765-9d96-46e5-8984-bf26ad356254"
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
+			"x-param-id": "73c5fd3a-39bd-4527-9842-b95dc1a8ff4b"
+		},
+		{
+			"name": "pageSize",
+			"in": "query",
+			"description": "每页条数",
+			"required": true,
+			"example": "1",
+			"schema": {
+				"type": "integer",
+				"example": 1
+			},
+			"x-param-id": "ea39c2b2-16f8-45f4-a09e-a8c15dea27ab"
 		}
 	],
 	"requestBody": {
@@ -247,11 +247,7 @@
 			"description": "Success"
 		}
 	},
-	"x-parent-id": "02c564f77d801e70",
-<<<<<<< HEAD
+	"x-parent-id": "76bb694ecb001c7f",
 	"x-protocol": "http",
 	"x-is-changed": -1
-=======
-	"x-protocol": "http"
->>>>>>> 88819fa1217b930b5833dae397b571342ee91159
 }
