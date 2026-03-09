@@ -9,7 +9,7 @@
 	"x-updated-at": "2025-11-17T10:47:34+08:00",
 	"x-updated-user-name": "",
 	"x-in-trash": false,
-	"x-sort": 0,
+	"x-sort": 1,
 	"x-scripts": {
 		"pre": [
 			{
@@ -156,7 +156,21 @@
 	"summary": "Unnamed API",
 	"description": "",
 	"tags": [],
-	"parameters": [],
+	"parameters": [
+		{
+			"name": "1111",
+			"in": "query",
+			"description": "",
+			"required": true,
+			"example": "",
+			"schema": {
+				"type": "number",
+				"description": ""
+			},
+			"x-param-id": "28885e737fb015",
+			"x-static": true
+		}
+	],
 	"requestBody": {
 		"x-mode": "none",
 		"content": {
