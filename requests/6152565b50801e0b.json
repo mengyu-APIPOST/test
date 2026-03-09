@@ -2,5 +2,7 @@
 	"name": "com.apipost.controller",
 	"x-target-id": "6152565b50801e0b",
 	"x-parent-id": "0",
-	"x-protocol": "folder"
+	"x-protocol": "folder",
+	"x-in-trash": true,
+	"x-deleted-at": 1773046018860
 }

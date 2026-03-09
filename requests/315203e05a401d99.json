@@ -223,5 +223,7 @@
 		}
 	},
 	"x-parent-id": "02c564f77d801e70",
-	"x-protocol": "http"
+	"x-protocol": "http",
+	"x-in-trash": true,
+	"x-deleted-at": 1773046019263
 }

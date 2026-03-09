@@ -237,5 +237,7 @@
 	},
 	"x-parent-id": "76bb694ecb001c7f",
 	"x-protocol": "http",
-	"x-is-changed": -1
+	"x-is-changed": -1,
+	"x-in-trash": true,
+	"x-deleted-at": 1773046019101
 }
