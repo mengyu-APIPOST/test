@@ -1,7 +1,6 @@
 {
 	"x-url": "user/save",
 	"x-method": "post",
-	"summary": "333",
 	"x-target-id": "2810390f0fc01d7b",
 	"x-scan-form": "Java",
 	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo/src/main/java/com/apipost/controller/UserController.java",
