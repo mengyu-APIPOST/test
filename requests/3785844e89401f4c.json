@@ -1,7 +1,7 @@
 {
 	"x-url": "/product/list",
 	"x-method": "get",
-	"summary": "分页查询商品列表",
+	"summary": "分页查询1111商品列表",
 	"x-target-id": "3785844e89401f4c",
 	"x-scan-form": "Java",
 	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo2/src/main/java/com/apipost/controller/UserController.java",
