@@ -15,7 +15,7 @@
 			{
 				"type": "customScript",
 				"enabled": 1,
-				"data": "",
+				"data": "预执行脚本",
 				"name": "Script",
 				"id": "0"
 			}
@@ -24,7 +24,7 @@
 			{
 				"type": "customScript",
 				"enabled": 1,
-				"data": "",
+				"data": "后执行脚本",
 				"name": "Script",
 				"id": "0"
 			}
@@ -153,10 +153,33 @@
 			"exp": ""
 		}
 	},
-	"summary": "2",
+	"summary": "2b",
 	"description": "",
 	"tags": [],
-	"parameters": [],
+	"parameters": [
+		{
+			"name": "111",
+			"in": "header",
+			"description": "",
+			"required": true,
+			"example": "222",
+			"schema": {
+				"type": "string"
+			},
+			"x-param-id": "2adf7f4f7fb126"
+		},
+		{
+			"name": "333",
+			"in": "cookie",
+			"description": "",
+			"required": true,
+			"example": "444",
+			"schema": {
+				"type": "string"
+			},
+			"x-param-id": "2adf811d3fb144"
+		}
+	],
 	"requestBody": {
 		"x-mode": "none",
 		"content": {
