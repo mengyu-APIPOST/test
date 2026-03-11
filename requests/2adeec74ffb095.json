@@ -1,7 +1,7 @@
 {
 	"x-target-id": "2adeec74ffb095",
 	"x-parent-id": "0",
-	"x-method": "get",
+	"x-method": "post",
 	"x-url": "",
 	"x-protocol": "http",
 	"x-mock-server-enable": 1,
