@@ -1,7 +1,11 @@
 {
 	"x-url": "user/getById",
 	"x-method": "get",
+<<<<<<< HEAD
 	"summary": "111取用户对象",
+=======
+	"summary": "通过 ID 1122233户对象",
+>>>>>>> a7530e46fa3940e13476e3c82fbe81b50df5f129
 	"x-target-id": "0eb4ad47bc001b97",
 	"x-scan-form": "Java",
 	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo/src/main/java/com/apipost/controller/UserController.java",

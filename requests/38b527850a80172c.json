@@ -1,7 +1,7 @@
 {
 	"x-url": "/product/deleteById",
 	"x-method": "delete",
-	"summary": "删除商品",
+	"summary": "删除111商品",
 	"x-target-id": "38b527850a80172c",
 	"x-scan-form": "Java",
 	"x-scan-path": "/Users/mengyu/Downloads/apipost-demo2/src/main/java/com/apipost/controller/UserController.java",
