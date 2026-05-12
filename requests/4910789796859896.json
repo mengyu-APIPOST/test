@@ -1,14 +1,10 @@
 {
-	"x-url": "/api/demo/session",
-	"x-method": "get",
-<<<<<<< HEAD
-	"summary": "Session demo with header, cookie, query",
-=======
-	"summary": "接口 8: Header + Cookie + 查询",
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
+	"x-url": "/api/demo/preferences",
+	"x-method": "post",
+	"summary": "POST /api/demo/preferences",
 	"x-parent-id": "0",
 	"x-protocol": "http",
-	"x-target-id": "6329354499767501",
+	"x-target-id": "4910789796859896",
 	"x-scan-form": "Node",
 	"x-scan-path": "/Users/mengyu/Desktop/资料/测试数据/框架/fastify——10个接口/fastify-params-demo/routes/demo.js",
 	"x-mock-server-enable": 1,
@@ -163,41 +159,8 @@
 	"tags": [],
 	"parameters": [
 		{
-<<<<<<< HEAD
-			"name": "lang",
-			"in": "query",
-			"schema": {
-				"type": "string"
-			},
-			"required": false,
-			"x-is-checked": true
-		},
-		{
-			"name": "user-agent",
-			"in": "header",
-			"schema": {
-				"type": "string"
-			},
-			"required": false,
-=======
-			"name": "user-agent",
-			"in": "header",
-			"required": false,
-			"schema": {
-				"type": "string"
-			},
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
-			"x-is-checked": true
-		},
-		{
-			"name": "sessionId",
+			"name": "userId",
 			"in": "cookie",
-<<<<<<< HEAD
-			"schema": {
-				"type": "string"
-			},
-			"required": false,
-=======
 			"required": false,
 			"schema": {
 				"type": "string"
@@ -205,50 +168,34 @@
 			"x-is-checked": true
 		},
 		{
-			"name": "lang",
-			"in": "query",
+			"name": "referer",
+			"in": "header",
 			"required": false,
 			"schema": {
 				"type": "string"
 			},
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"x-is-checked": true
 		}
 	],
 	"requestBody": {
-		"x-mode": "none",
+		"x-mode": "application/json",
 		"content": {
-			"none": {}
-		}
-	},
-<<<<<<< HEAD
-	"responses": {}
-=======
-	"responses": {
-		"200": {
-			"description": "Success",
-			"content": {
-				"application/json": {
-					"schema": {
-						"type": "object",
-						"properties": {
-							"message": {
-								"type": "string"
-							},
-							"query": {
-								"type": "object"
-							},
-							"header": {
-								"type": "object"
-							},
-							"cookie": {
-								"type": "object"
-							}
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"properties": {
+						"theme": {
+							"type": "string"
+						},
+						"language": {
+							"type": "string"
 						}
-					}
-				}
+					},
+					"example": "{\"ea_0\":\"amet anim nisi ut\",\"voluptate__\":73137621.72705847,\"fugiat6\":19444041.767075896,\"theme\":\"ea voluptate exercitation qui dolor\",\"language\":\"ut adipisicing aliqua\"}"
+				},
+				"example": "{\"ea_0\":\"amet anim nisi ut\",\"voluptate__\":73137621.72705847,\"fugiat6\":19444041.767075896,\"theme\":\"ea voluptate exercitation qui dolor\",\"language\":\"ut adipisicing aliqua\"}"
 			}
 		}
-	}
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
+	},
+	"responses": {}
 }

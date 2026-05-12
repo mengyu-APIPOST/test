@@ -1,7 +1,11 @@
 {
 	"x-url": "/api/demo/resources/{resourceId}",
 	"x-method": "put",
+<<<<<<< HEAD
 	"summary": "PUT /api/demo/resources/{resourceId}",
+=======
+	"summary": "接口 7: 全部参数类型",
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 	"x-parent-id": "0",
 	"x-protocol": "http",
 	"x-target-id": "2840747398308298",
@@ -180,7 +184,11 @@
 		{
 			"name": "authorization",
 			"in": "header",
+<<<<<<< HEAD
 			"required": true,
+=======
+			"required": false,
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"schema": {
 				"type": "string"
 			},
@@ -210,9 +218,15 @@
 							"type": "object"
 						}
 					},
+<<<<<<< HEAD
 					"example": "{\"data\":\"sunt ad laboris\",\"metadata\":{\"quib0\":false,\"dof\":-78782046.41641897,\"essef\":99318734.10228884}}"
 				},
 				"example": "{\"data\":\"sunt ad laboris\",\"metadata\":{\"quib0\":false,\"dof\":-78782046.41641897,\"essef\":99318734.10228884}}"
+=======
+					"example": "{\"ea7f\":95058811,\"data\":\"laboris commodo ex\",\"metadata\":{\"aute__9\":-91110478.22487026,\"ipsum_bf6\":86339968}}"
+				},
+				"example": "{\"ea7f\":95058811,\"data\":\"laboris commodo ex\",\"metadata\":{\"aute__9\":-91110478.22487026,\"ipsum_bf6\":86339968}}"
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			}
 		}
 	},

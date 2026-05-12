@@ -1,7 +1,11 @@
 {
 	"x-url": "/api/demo/create",
 	"x-method": "post",
+<<<<<<< HEAD
 	"summary": "Create demo",
+=======
+	"summary": "Create demo entry",
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 	"x-parent-id": "0",
 	"x-protocol": "http",
 	"x-target-id": "6144132246460343",
@@ -155,6 +159,7 @@
 			"exp": ""
 		}
 	},
+<<<<<<< HEAD
 	"description": "接口 2: Body + Cookie + Header",
 	"tags": [],
 	"parameters": [
@@ -168,11 +173,31 @@
 			"x-is-checked": true
 		},
 		{
+=======
+	"description": "Body + Cookie + Header",
+	"tags": [],
+	"parameters": [
+		{
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"in": "cookie",
 			"name": "sessionId",
 			"schema": {
 				"type": "string"
 			},
+<<<<<<< HEAD
+=======
+			"description": "Session ID",
+			"required": false,
+			"x-is-checked": true
+		},
+		{
+			"in": "header",
+			"name": "user-agent",
+			"schema": {
+				"type": "string"
+			},
+			"description": "User Agent",
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"required": false,
 			"x-is-checked": true
 		}
@@ -189,6 +214,7 @@
 					],
 					"properties": {
 						"title": {
+<<<<<<< HEAD
 							"type": "string"
 						},
 						"content": {
@@ -201,6 +227,23 @@
 					"example": "{\"title\":\"ex id consectetur aute\",\"content\":\"cupidatat sunt cillum eu\",\"tags\":[]}"
 				},
 				"example": "{\"title\":\"ex id consectetur aute\",\"content\":\"cupidatat sunt cillum eu\",\"tags\":[]}"
+=======
+							"type": "string",
+							"description": "Title"
+						},
+						"content": {
+							"type": "string",
+							"description": "Content"
+						},
+						"tags": {
+							"type": "array",
+							"description": "Tags"
+						}
+					},
+					"example": "{\"title\":\"esse eiusmod aliqua nisi\",\"content\":\"Duis eiusmod\"}"
+				},
+				"example": "{\"title\":\"esse eiusmod aliqua nisi\",\"content\":\"Duis eiusmod\"}"
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			}
 		}
 	},

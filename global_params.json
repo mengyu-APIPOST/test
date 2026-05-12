@@ -1,39 +1,36 @@
 {
-	"x-url": "/",
-	"x-method": "get",
-	"summary": "GET /",
-	"x-parent-id": "0",
-	"x-protocol": "http",
-	"x-target-id": "7186257025422800",
-	"x-scan-form": "Node",
-	"x-scan-path": "/Users/mengyu/Desktop/资料/测试数据/框架/fastify——10个接口/fastify-params-demo/routes/demo.js",
-	"x-mock-server-enable": 1,
-	"x-mark-id": "1",
-	"x-updated-at": "",
-	"x-updated-user-name": "",
-	"x-sort": 0,
-	"x-scripts": {
-		"pre": [
-			{
-				"type": "customScript",
-				"enabled": 1,
-				"data": "",
-				"name": "Script",
-				"id": "0"
-			}
-		],
-		"post": [
-			{
-				"type": "customScript",
-				"enabled": 1,
-				"data": "",
-				"name": "Script",
-				"id": "0"
-			}
-		]
+	"cookie": {
+		"parameter": []
 	},
-	"x-auth": {
-		"type": "inherit",
+	"query": {
+		"parameter": []
+	},
+	"body": {
+		"parameter": []
+	},
+	"header": {
+		"parameter": []
+	},
+	"post_tasks": [
+		{
+			"type": "customScript",
+			"enabled": 1,
+			"data": "pm.test(\"Response headers: Content-Type header check\", function () {\n      pm.response.to.have.header(\"Content-Type\");\n    });\npm.test(\"Status code: Successful POST request\", function () {\n      pm.expect(pm.response.code).to.be.oneOf([201, 202]);\n    });\nvar jsonObject = xml2Json(responseBody);\npm.globals.get(\"variable_key\");\npm.test(\"Response body: Is equal to a string\", function () {\n      pm.response.to.have.body(\"response_body_string\");\n    });",
+			"name": "Script",
+			"id": "0"
+		}
+	],
+	"pre_tasks": [
+		{
+			"type": "customScript",
+			"enabled": 1,
+			"data": "pm.environment.getPreUrl();\npm.environment.clear();\npm.globals.get(\"key\");",
+			"name": "Script",
+			"id": "0"
+		}
+	],
+	"auth": {
+		"type": "noauth",
 		"kv": {
 			"key": "",
 			"value": "",
@@ -154,19 +151,5 @@
 			"claims": "",
 			"exp": ""
 		}
-	},
-<<<<<<< HEAD
-	"description": "Referer header",
-=======
-	"description": "",
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
-	"tags": [],
-	"parameters": [],
-	"requestBody": {
-		"x-mode": "none",
-		"content": {
-			"none": {}
-		}
-	},
-	"responses": {}
+	}
 }

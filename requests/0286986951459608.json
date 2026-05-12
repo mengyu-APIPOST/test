@@ -1,7 +1,11 @@
 {
 	"x-url": "/api/demo/orders",
 	"x-method": "post",
+<<<<<<< HEAD
 	"summary": "Create order",
+=======
+	"summary": "Create an order",
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 	"x-parent-id": "0",
 	"x-protocol": "http",
 	"x-target-id": "0286986951459608",
@@ -155,27 +159,47 @@
 			"exp": ""
 		}
 	},
+<<<<<<< HEAD
 	"description": "Body + Auth + Cookie endpoint",
 	"tags": [],
 	"parameters": [
 		{
 			"name": "Authorization",
 			"in": "header",
+=======
+	"description": "Creates a new order with product ID and quantity, requires authentication via Bearer token.",
+	"tags": [],
+	"parameters": [
+		{
+			"name": "authorization",
+			"in": "header",
+			"description": "Bearer token",
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"required": true,
 			"schema": {
 				"type": "string"
 			},
+<<<<<<< HEAD
 			"description": "Bearer token for authentication",
+=======
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"x-is-checked": true
 		},
 		{
 			"name": "userId",
 			"in": "cookie",
+<<<<<<< HEAD
+=======
+			"description": "User ID cookie",
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"required": false,
 			"schema": {
 				"type": "string"
 			},
+<<<<<<< HEAD
 			"description": "User ID from cookie",
+=======
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"x-is-checked": true
 		}
 	],
@@ -191,6 +215,7 @@
 					],
 					"properties": {
 						"productId": {
+<<<<<<< HEAD
 							"type": "integer",
 							"description": "Product ID"
 						},
@@ -207,12 +232,31 @@
 					"example": "{\"productId\":-37212431,\"quantity\":60179727,\"coupon\":\"veniam\"}"
 				},
 				"example": "{\"productId\":-37212431,\"quantity\":60179727,\"coupon\":\"veniam\"}"
+=======
+							"type": "integer"
+						},
+						"quantity": {
+							"type": "integer",
+							"minimum": 1
+						},
+						"coupon": {
+							"type": "string"
+						}
+					},
+					"example": "{\"productId\":-24364765,\"quantity\":48321749,\"coupon\":\"in\"}"
+				},
+				"example": "{\"productId\":-24364765,\"quantity\":48321749,\"coupon\":\"in\"}"
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			}
 		}
 	},
 	"responses": {
 		"200": {
+<<<<<<< HEAD
 			"description": "Successful response"
+=======
+			"description": "Success"
+>>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 		},
 		"401": {
 			"description": "Unauthorized"

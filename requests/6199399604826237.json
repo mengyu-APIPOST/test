@@ -1,14 +1,10 @@
 {
-	"x-url": "/api/demo/session",
+	"x-url": "/api/demo/users/{userId}",
 	"x-method": "get",
-<<<<<<< HEAD
-	"summary": "Session demo with header, cookie, query",
-=======
-	"summary": "接口 8: Header + Cookie + 查询",
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
+	"summary": "接口 5: 路径+查询+认证+Cookie",
 	"x-parent-id": "0",
 	"x-protocol": "http",
-	"x-target-id": "6329354499767501",
+	"x-target-id": "6199399604826237",
 	"x-scan-form": "Node",
 	"x-scan-path": "/Users/mengyu/Desktop/资料/测试数据/框架/fastify——10个接口/fastify-params-demo/routes/demo.js",
 	"x-mock-server-enable": 1,
@@ -163,55 +159,40 @@
 	"tags": [],
 	"parameters": [
 		{
-<<<<<<< HEAD
-			"name": "lang",
+			"in": "path",
+			"name": "userId",
+			"required": true,
+			"schema": {
+				"type": "integer"
+			},
+			"x-is-checked": true
+		},
+		{
 			"in": "query",
+			"name": "includeStats",
 			"schema": {
-				"type": "string"
+				"type": "boolean",
+				"default": false
 			},
 			"required": false,
 			"x-is-checked": true
 		},
 		{
-			"name": "user-agent",
 			"in": "header",
+			"name": "Authorization",
+			"required": true,
 			"schema": {
 				"type": "string"
 			},
-			"required": false,
-=======
-			"name": "user-agent",
-			"in": "header",
-			"required": false,
-			"schema": {
-				"type": "string"
-			},
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"x-is-checked": true
 		},
 		{
-			"name": "sessionId",
 			"in": "cookie",
-<<<<<<< HEAD
+			"name": "sessionToken",
 			"schema": {
 				"type": "string"
 			},
 			"required": false,
-=======
-			"required": false,
-			"schema": {
-				"type": "string"
-			},
-			"x-is-checked": true
-		},
-		{
-			"name": "lang",
-			"in": "query",
-			"required": false,
-			"schema": {
-				"type": "string"
-			},
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 			"x-is-checked": true
 		}
 	],
@@ -221,34 +202,5 @@
 			"none": {}
 		}
 	},
-<<<<<<< HEAD
 	"responses": {}
-=======
-	"responses": {
-		"200": {
-			"description": "Success",
-			"content": {
-				"application/json": {
-					"schema": {
-						"type": "object",
-						"properties": {
-							"message": {
-								"type": "string"
-							},
-							"query": {
-								"type": "object"
-							},
-							"header": {
-								"type": "object"
-							},
-							"cookie": {
-								"type": "object"
-							}
-						}
-					}
-				}
-			}
-		}
-	}
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
 }

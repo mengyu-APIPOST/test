@@ -1,20 +1,14 @@
 {
-	"x-url": "/api/demo/session",
-	"x-method": "get",
-<<<<<<< HEAD
-	"summary": "Session demo with header, cookie, query",
-=======
-	"summary": "接口 8: Header + Cookie + 查询",
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
+	"x-target-id": "35e2c1b6bfb000",
 	"x-parent-id": "0",
+	"x-method": "get",
+	"x-url": "",
 	"x-protocol": "http",
-	"x-target-id": "6329354499767501",
-	"x-scan-form": "Node",
-	"x-scan-path": "/Users/mengyu/Desktop/资料/测试数据/框架/fastify——10个接口/fastify-params-demo/routes/demo.js",
 	"x-mock-server-enable": 1,
 	"x-mark-id": "1",
-	"x-updated-at": "",
+	"x-updated-at": "2025-11-17T10:47:34+08:00",
 	"x-updated-user-name": "",
+	"x-in-trash": false,
 	"x-sort": 0,
 	"x-scripts": {
 		"pre": [
@@ -159,71 +153,16 @@
 			"exp": ""
 		}
 	},
+	"summary": "Unnamed API",
 	"description": "",
 	"tags": [],
-	"parameters": [
-		{
-<<<<<<< HEAD
-			"name": "lang",
-			"in": "query",
-			"schema": {
-				"type": "string"
-			},
-			"required": false,
-			"x-is-checked": true
-		},
-		{
-			"name": "user-agent",
-			"in": "header",
-			"schema": {
-				"type": "string"
-			},
-			"required": false,
-=======
-			"name": "user-agent",
-			"in": "header",
-			"required": false,
-			"schema": {
-				"type": "string"
-			},
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
-			"x-is-checked": true
-		},
-		{
-			"name": "sessionId",
-			"in": "cookie",
-<<<<<<< HEAD
-			"schema": {
-				"type": "string"
-			},
-			"required": false,
-=======
-			"required": false,
-			"schema": {
-				"type": "string"
-			},
-			"x-is-checked": true
-		},
-		{
-			"name": "lang",
-			"in": "query",
-			"required": false,
-			"schema": {
-				"type": "string"
-			},
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
-			"x-is-checked": true
-		}
-	],
+	"parameters": [],
 	"requestBody": {
 		"x-mode": "none",
 		"content": {
 			"none": {}
 		}
 	},
-<<<<<<< HEAD
-	"responses": {}
-=======
 	"responses": {
 		"200": {
 			"description": "Success",
@@ -231,24 +170,26 @@
 				"application/json": {
 					"schema": {
 						"type": "object",
-						"properties": {
-							"message": {
-								"type": "string"
-							},
-							"query": {
-								"type": "object"
-							},
-							"header": {
-								"type": "object"
-							},
-							"cookie": {
-								"type": "object"
-							}
-						}
-					}
+						"properties": {}
+					},
+					"example": ""
+				}
+			}
+		},
+		"404": {
+			"description": "Failure",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object",
+						"properties": {}
+					},
+					"example": ""
 				}
 			}
 		}
-	}
->>>>>>> 19d3f69b033e0540978603e605474643d34c0d19
+	},
+	"x-project-id": "0",
+	"x-is-changed": -1,
+	"x-created-at": 1778232615803
 }
