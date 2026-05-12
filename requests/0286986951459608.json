@@ -1,0 +1,221 @@
+{
+	"x-url": "/api/demo/orders",
+	"x-method": "post",
+	"summary": "Create order",
+	"x-parent-id": "0",
+	"x-protocol": "http",
+	"x-target-id": "0286986951459608",
+	"x-scan-form": "Node",
+	"x-scan-path": "/Users/mengyu/Desktop/资料/测试数据/框架/fastify——10个接口/fastify-params-demo/routes/demo.js",
+	"x-mock-server-enable": 1,
+	"x-mark-id": "1",
+	"x-updated-at": "",
+	"x-updated-user-name": "",
+	"x-sort": 0,
+	"x-scripts": {
+		"pre": [
+			{
+				"type": "customScript",
+				"enabled": 1,
+				"data": "",
+				"name": "Script",
+				"id": "0"
+			}
+		],
+		"post": [
+			{
+				"type": "customScript",
+				"enabled": 1,
+				"data": "",
+				"name": "Script",
+				"id": "0"
+			}
+		]
+	},
+	"x-auth": {
+		"type": "inherit",
+		"kv": {
+			"key": "",
+			"value": "",
+			"in": "header"
+		},
+		"bearer": {
+			"key": ""
+		},
+		"basic": {
+			"username": "",
+			"password": ""
+		},
+		"digest": {
+			"username": "",
+			"password": "",
+			"realm": "",
+			"nonce": "",
+			"algorithm": "MD5",
+			"qop": "",
+			"nc": "",
+			"cnonce": "",
+			"opaque": "",
+			"disableRetryRequest": false
+		},
+		"oauth1": {
+			"consumerKey": "",
+			"consumerSecret": "",
+			"signatureMethod": "HMAC-SHA1",
+			"addEmptyParamsToSign": true,
+			"includeBodyHash": true,
+			"addParamsToHeader": false,
+			"realm": "",
+			"version": "1.0",
+			"nonce": "",
+			"timestamp": "",
+			"verifier": "",
+			"callback": "",
+			"tokenSecret": "",
+			"token": "",
+			"disableHeaderEncoding": false
+		},
+		"oauth2": {
+			"addTokenTo": "header",
+			"headerPrefix": "Bearer",
+			"access_token": "",
+			"grant_type": "authorization_code",
+			"redirect_uri": "",
+			"authUrl": "",
+			"accessTokenUrl": "",
+			"clientId": "",
+			"clientSecret": "",
+			"username": "",
+			"password": "",
+			"challengeAlgorithm": "S256",
+			"code_verifier": "Bearer",
+			"scope": "",
+			"state": "",
+			"client_authentication": "header",
+			"refreshTokenUrl": "",
+			"authRequestParams": [],
+			"tokenRequestParams": [],
+			"refreshRequestParams": []
+		},
+		"hawk": {
+			"authId": "",
+			"authKey": "",
+			"algorithm": "",
+			"user": "",
+			"nonce": "",
+			"extraData": "",
+			"app": "",
+			"delegation": "",
+			"timestamp": "",
+			"includePayloadHash": false
+		},
+		"awsv4": {
+			"accessKey": "",
+			"secretKey": "",
+			"region": "",
+			"service": "",
+			"sessionToken": "",
+			"addAuthDataToQuery": false
+		},
+		"ntlm": {
+			"username": "",
+			"password": "",
+			"domain": "",
+			"workstation": "",
+			"disableRetryRequest": false
+		},
+		"edgegrid": {
+			"accessToken": "",
+			"clientToken": "",
+			"clientSecret": "",
+			"nonce": "",
+			"timestamp": "",
+			"baseURi": "",
+			"headersToSign": ""
+		},
+		"noauth": {},
+		"jwt": {
+			"addTokenTo": "header",
+			"algorithm": "HS256",
+			"secret": "",
+			"isSecretBase64Encoded": false,
+			"payload": "",
+			"headerPrefix": "Bearer",
+			"queryParamKey": "token",
+			"header": ""
+		},
+		"asap": {
+			"alg": "HS256",
+			"iss": "",
+			"aud": "",
+			"kid": "",
+			"privateKey": "",
+			"sub": "",
+			"claims": "",
+			"exp": ""
+		}
+	},
+	"description": "Body + Auth + Cookie endpoint",
+	"tags": [],
+	"parameters": [
+		{
+			"name": "Authorization",
+			"in": "header",
+			"required": true,
+			"schema": {
+				"type": "string"
+			},
+			"description": "Bearer token for authentication",
+			"x-is-checked": true
+		},
+		{
+			"name": "userId",
+			"in": "cookie",
+			"required": false,
+			"schema": {
+				"type": "string"
+			},
+			"description": "User ID from cookie",
+			"x-is-checked": true
+		}
+	],
+	"requestBody": {
+		"x-mode": "application/json",
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"required": [
+						"productId",
+						"quantity"
+					],
+					"properties": {
+						"productId": {
+							"type": "integer",
+							"description": "Product ID"
+						},
+						"quantity": {
+							"type": "integer",
+							"minimum": 1,
+							"description": "Quantity"
+						},
+						"coupon": {
+							"type": "string",
+							"description": "Coupon code"
+						}
+					},
+					"example": "{\"productId\":-37212431,\"quantity\":60179727,\"coupon\":\"veniam\"}"
+				},
+				"example": "{\"productId\":-37212431,\"quantity\":60179727,\"coupon\":\"veniam\"}"
+			}
+		}
+	},
+	"responses": {
+		"200": {
+			"description": "Successful response"
+		},
+		"401": {
+			"description": "Unauthorized"
+		}
+	}
+}

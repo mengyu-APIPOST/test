@@ -1,0 +1,215 @@
+{
+	"x-url": "/api/demo/comments/:postId",
+	"x-method": "post",
+	"summary": "Create comment on post",
+	"x-parent-id": "0",
+	"x-protocol": "http",
+	"x-target-id": "9431649704610368",
+	"x-scan-form": "Node",
+	"x-scan-path": "/Users/mengyu/Desktop/资料/测试数据/框架/fastify——10个接口/fastify-params-demo/routes/demo.js",
+	"x-mock-server-enable": 1,
+	"x-mark-id": "1",
+	"x-updated-at": "",
+	"x-updated-user-name": "",
+	"x-sort": 0,
+	"x-scripts": {
+		"pre": [
+			{
+				"type": "customScript",
+				"enabled": 1,
+				"data": "",
+				"name": "Script",
+				"id": "0"
+			}
+		],
+		"post": [
+			{
+				"type": "customScript",
+				"enabled": 1,
+				"data": "",
+				"name": "Script",
+				"id": "0"
+			}
+		]
+	},
+	"x-auth": {
+		"type": "inherit",
+		"kv": {
+			"key": "",
+			"value": "",
+			"in": "header"
+		},
+		"bearer": {
+			"key": ""
+		},
+		"basic": {
+			"username": "",
+			"password": ""
+		},
+		"digest": {
+			"username": "",
+			"password": "",
+			"realm": "",
+			"nonce": "",
+			"algorithm": "MD5",
+			"qop": "",
+			"nc": "",
+			"cnonce": "",
+			"opaque": "",
+			"disableRetryRequest": false
+		},
+		"oauth1": {
+			"consumerKey": "",
+			"consumerSecret": "",
+			"signatureMethod": "HMAC-SHA1",
+			"addEmptyParamsToSign": true,
+			"includeBodyHash": true,
+			"addParamsToHeader": false,
+			"realm": "",
+			"version": "1.0",
+			"nonce": "",
+			"timestamp": "",
+			"verifier": "",
+			"callback": "",
+			"tokenSecret": "",
+			"token": "",
+			"disableHeaderEncoding": false
+		},
+		"oauth2": {
+			"addTokenTo": "header",
+			"headerPrefix": "Bearer",
+			"access_token": "",
+			"grant_type": "authorization_code",
+			"redirect_uri": "",
+			"authUrl": "",
+			"accessTokenUrl": "",
+			"clientId": "",
+			"clientSecret": "",
+			"username": "",
+			"password": "",
+			"challengeAlgorithm": "S256",
+			"code_verifier": "Bearer",
+			"scope": "",
+			"state": "",
+			"client_authentication": "header",
+			"refreshTokenUrl": "",
+			"authRequestParams": [],
+			"tokenRequestParams": [],
+			"refreshRequestParams": []
+		},
+		"hawk": {
+			"authId": "",
+			"authKey": "",
+			"algorithm": "",
+			"user": "",
+			"nonce": "",
+			"extraData": "",
+			"app": "",
+			"delegation": "",
+			"timestamp": "",
+			"includePayloadHash": false
+		},
+		"awsv4": {
+			"accessKey": "",
+			"secretKey": "",
+			"region": "",
+			"service": "",
+			"sessionToken": "",
+			"addAuthDataToQuery": false
+		},
+		"ntlm": {
+			"username": "",
+			"password": "",
+			"domain": "",
+			"workstation": "",
+			"disableRetryRequest": false
+		},
+		"edgegrid": {
+			"accessToken": "",
+			"clientToken": "",
+			"clientSecret": "",
+			"nonce": "",
+			"timestamp": "",
+			"baseURi": "",
+			"headersToSign": ""
+		},
+		"noauth": {},
+		"jwt": {
+			"addTokenTo": "header",
+			"algorithm": "HS256",
+			"secret": "",
+			"isSecretBase64Encoded": false,
+			"payload": "",
+			"headerPrefix": "Bearer",
+			"queryParamKey": "token",
+			"header": ""
+		},
+		"asap": {
+			"alg": "HS256",
+			"iss": "",
+			"aud": "",
+			"kid": "",
+			"privateKey": "",
+			"sub": "",
+			"claims": "",
+			"exp": ""
+		}
+	},
+	"description": "",
+	"tags": [],
+	"parameters": [
+		{
+			"in": "path",
+			"name": "postId",
+			"required": true,
+			"schema": {
+				"type": "integer"
+			},
+			"x-is-checked": true
+		},
+		{
+			"in": "header",
+			"name": "authorization",
+			"required": true,
+			"schema": {
+				"type": "string"
+			},
+			"x-is-checked": true
+		},
+		{
+			"in": "cookie",
+			"name": "userId",
+			"required": false,
+			"schema": {
+				"type": "string"
+			},
+			"x-is-checked": true
+		}
+	],
+	"requestBody": {
+		"x-mode": "application/json",
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"required": [
+						"text"
+					],
+					"properties": {
+						"text": {
+							"type": "string"
+						},
+						"rating": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 5
+						}
+					},
+					"example": "{\"text\":\"do non adipisicing\",\"rating\":4}"
+				},
+				"example": "{\"text\":\"do non adipisicing\",\"rating\":4}"
+			}
+		}
+	},
+	"responses": {}
+}
